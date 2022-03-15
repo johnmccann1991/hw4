@@ -8,4 +8,19 @@
   <p>
     <%= form.submit %>
   </p>
+
+    <% form.label "description"%>
+    <% from.text_field "description"%>
+  </p>
+
+    <% form.label "posted_on"%>
+    <% from.text_field "posted_on"%>
+  </p>
+
+  <div class="mb-3">
+    <% form.label "uploaded_image", class: "form-label"%>
+    <% form.file_field "uploaded_image", accept: "image/png,image.jpg,image/jpeg"%>
+  </div>
+
+
 <% end %>
